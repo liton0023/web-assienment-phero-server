@@ -63,8 +63,14 @@ const updateProject = async (
   return result;
 };
 
+const deleteProject = async (id: string): Promise<IProjects | null> => {
+  const result = await Projects.findByIdAndDelete(id);
+  return result;
+};
+
 export const ProjectService = {
   createProject,
   getAllProjects,
   updateProject,
+  deleteProject,
 };
