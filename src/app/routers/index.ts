@@ -1,14 +1,13 @@
 import express, { Router } from 'express';
-import { ProjectRouter } from '../model/projects/projects.route';
 const routers: Router = express.Router();
 
 const modulRoutes = [
   {
     path: '/projects',
-    route: ProjectRouter,
+    route: '',
   },
 ];
 
-modulRoutes.forEach(route => routers.use(route.path, route.route));
+modulRoutes.forEach(route => routers.use(route.path));
 
 export default routers;
