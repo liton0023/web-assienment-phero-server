@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 10
+    },
+    "auditLog": "D:\\Rs Mahmud\\intern-peoject\\web-developer-server\\logs\\winston\\successes\\.93b22f8fc165c97e0a5d7adcdafbd285b9f54be3-audit.json",
+    "files": [
+        {
+            "date": 1714860202144,
+            "name": "D:\\Rs Mahmud\\intern-peoject\\web-developer-server\\logs\\winston\\successes\\phu-2024-05-05-04-ssuccess.log",
+            "hash": "e8c28c2e345ed0d3d4e9487d5cdbf60f9635ed562f48f62802ac86d0f7a06fa7"
+        }
+    ],
+    "hashType": "sha256"
+}
