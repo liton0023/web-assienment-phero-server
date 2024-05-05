@@ -1,4 +1,5 @@
-import { Model } from 'mongoose';
+import { Model, Types } from 'mongoose';
+import { ICow } from '../cow/cow.interface';
 
 export type UserName = {
   firstName: string;
@@ -15,6 +16,7 @@ export type IUser = {
   address: string;
   budget?: number;
   income?: number;
+  cow?: Types.ObjectId | ICow;
 };
 
 export type UserModel = Model<IUser, Record<string, unknown>>;

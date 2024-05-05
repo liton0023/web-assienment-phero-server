@@ -49,9 +49,16 @@ export const UserSchema = new Schema<IUser, UserModel>(
       type: Number,
       required: true,
     },
+    cow: {
+      type: Schema.Types.ObjectId,
+      ref: 'Cow',
+    },
   },
   {
     timestamps: true,
+    toJSON: {
+      virtuals: true,
+    },
   },
 );
 
